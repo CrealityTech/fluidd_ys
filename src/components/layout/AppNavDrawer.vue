@@ -50,7 +50,7 @@
             icon="$files"
             to="/jobs"
           >
-            {{ $t('app.general.title.jobs') }}
+            {{ $t('app.general.title.file_list') }}
           </app-nav-item>
 
           <app-nav-item

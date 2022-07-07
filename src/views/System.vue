@@ -13,7 +13,8 @@
       md="6"
     >
       <system-usage-card class="mb-2 mb-sm-4" />
-      <template
+      <!-- mcu相关信息先隐藏 -->
+      <!-- <template
         v-for="mcu in mcus"
       >
         <mcu-card
@@ -21,7 +22,7 @@
           :mcu="mcu"
           class="mb-2 mb-sm-4"
         />
-      </template>
+      </template> -->
     </v-col>
   </v-row>
 </template>
