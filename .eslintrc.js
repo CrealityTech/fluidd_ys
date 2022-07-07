@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:vue/recommended',
-    '@vue/standard',
+    // '@vue/standard',
     '@vue/typescript/recommended'
   ],
   parserOptions: {
