@@ -331,6 +331,7 @@ app:
       history: History
       home: Home
       jobs: Jobs
+      file_list: File List
       limits: Printer Limits
       macros: Macros
       other_files: Other Files

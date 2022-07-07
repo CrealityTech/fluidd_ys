@@ -301,6 +301,7 @@ app:
       history: 任务历史
       home: 仪表板
       jobs: 任务列表
+      file_list: 文件列表
       limits: 打印机限制
       macros: 宏
       other_files: 其他文件（日志、文档及参考配置）

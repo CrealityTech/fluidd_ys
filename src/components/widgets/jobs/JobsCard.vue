@@ -1,6 +1,6 @@
 <template>
   <collapsable-card
-    :title="$t('app.general.title.jobs')"
+    :title="$t('app.general.title.file_list')"
     icon="$files"
     :draggable="true"
     layout-path="dashboard.jobs-card"

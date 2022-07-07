@@ -126,7 +126,7 @@ import {
  * Global, static constants.
  */
 export const Globals = Object.freeze({
-  APP_NAME: 'fluidd',
+  APP_NAME: 'Creality sonic pad',
   HEADER_HEIGHT: 56,
   DEFAULTS: {
     CAMERA_URL: '/webcam?action=stream'

@@ -13,7 +13,7 @@
         <console-settings />
         <theme-settings />
         <file-editor-settings />
-        <auth-settings v-if="supportsAuth" />
+        <!-- <auth-settings v-if="supportsAuth" /> -->
         <macro-categories />
         <cameras />
         <toolhead-settings />

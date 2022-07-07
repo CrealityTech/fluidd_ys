@@ -2,7 +2,7 @@
   <v-row :dense="$vuetify.breakpoint.smAndDown">
     <v-col cols="12">
       <collapsable-card
-        :title="$t('app.general.title.jobs')"
+        :title="$t('app.general.title.file_list')"
         card-key="JobsPage"
         icon="$files"
         :draggable="false"
