@@ -1,7 +1,7 @@
 <template>
   <v-row :dense="$vuetify.breakpoint.smAndDown">
     <v-col cols="12">
-      <h1>All configured icons</h1>
+      <h1>{{ $t('app.customize_string.all_con_icon') }}</h1>
 
       <v-tooltip
         v-for="icon in icons"

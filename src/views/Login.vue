@@ -16,13 +16,13 @@
         @submit.prevent="handleLogin"
       >
         <div class="text-center">
-          <p>Welcome back.<br>Sign in below to stay in touch with your printer.</p>
+          <p>{{ $t('app.customize_string.welcome_back') }}<br>{{ $t('app.customize_string.login_connect_tip') }}</p>
 
           <v-alert
             v-if="error"
             type="error"
           >
-            Invalid credentials
+            {{ $t('app.customize_string.inval_cre') }}
           </v-alert>
 
           <v-text-field
@@ -61,7 +61,7 @@
             >
               $loading
             </v-icon>
-            Login
+            {{ $t('app.customize_string.login') }}
           </app-btn>
 
           <app-btn
@@ -71,7 +71,7 @@
             :href="$globals.DOCS_AUTH_LOST_PASSWORD"
             target="_blank"
           >
-            Forgotten your password?
+            {{ $t('app.customize_string.forgot_password') }}
           </app-btn>
 
           <app-btn
@@ -81,7 +81,7 @@
             :href="$globals.DOCS_AUTH"
             target="_blank"
           >
-            Unsure why you're seeing this?
+            {{ $t('app.customize_string.unsure_see') }}
           </app-btn>
         </div>
       </v-form>

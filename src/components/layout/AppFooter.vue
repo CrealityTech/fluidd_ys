@@ -8,7 +8,7 @@
   >
     <span class="secondary--text">
       &copy; {{ new Date().getFullYear() }}
-      fluidd: v{{ appInfo.version }}-{{ appInfo.hash }}
+      Creality sonic pad: v{{ appInfo.version }}-{{ appInfo.hash }}
     </span>
   </v-footer>
 </template>

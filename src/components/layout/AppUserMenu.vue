@@ -34,7 +34,7 @@
             small
             @click="$emit('change-password')"
           >
-            Change password
+            {{ $t('app.general.label.change_password') }}
           </app-btn>
         </div>
       </v-card-text>
@@ -49,7 +49,7 @@
           <v-list-item-icon>
             <v-icon>$addAccount</v-icon>
           </v-list-item-icon>
-          <v-list-item-title>Manage accounts</v-list-item-title>
+          <v-list-item-title>{{ $t('app.customize_string.manage_accounts') }}</v-list-item-title>
         </v-list-item>
 
         <v-divider v-if="!isTrustedOnly" />
@@ -57,7 +57,7 @@
         <v-list-item v-if="!isTrustedOnly">
           <v-list-item-content class="justify-center">
             <app-btn @click="handleLogout">
-              Logout
+              {{ $t('app.customize_string.logout') }}
             </app-btn>
           </v-list-item-content>
         </v-list-item>

@@ -32,7 +32,7 @@
 
           <div v-else>
             {{ (file.appFile ? `.${file.appFile.extension.toUpperCase()} files` : file.filename) }}
-            cannot currently be previewed.
+            {{ $t('app.customize_string.cannot_preview') }}
           </div>
         </v-layout>
       </v-card-text>

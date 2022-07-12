@@ -7,13 +7,13 @@
     <v-col>
       <center>
         <div class="text-h5">
-          404 Not Found
+          {{ $t('app.customize_string.not_found') }}
         </div>
         <app-btn
           to="/"
           class="mt-5"
         >
-          Return to the dashboard
+          {{ $t('app.customize_string.return_dashboard') }}
         </app-btn>
       </center>
     </v-col>

@@ -30,7 +30,7 @@
               small
               block
             >
-              active
+              {{ $t('app.customize_string.active') }}
             </v-chip>
           </td>
           <td class="focus--text">
