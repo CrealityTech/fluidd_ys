@@ -40,7 +40,7 @@ export default class KlippyStatusCard extends Mixins(StateMixin) {
    handleConnectError (resStr: string) {
     try {
       const curObj = JSON.parse(resStr)
-      const { code, values = [] } = curObj
+      const { code } = curObj
       if (code) {
         return curObj.msg
       } else {
