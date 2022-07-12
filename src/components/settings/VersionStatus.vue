@@ -65,7 +65,7 @@
       class="ml-1"
       @click="$emit('on-recover')"
     >
-      Recover
+      {{ $t('app.customize_string.recover') }}
     </app-btn>
   </div>
 </template>

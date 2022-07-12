@@ -79,7 +79,7 @@
             block
             @click="$emit('click', runCommand)"
           >
-            Send
+            {{ $t('app.general.btn.send') }}
           </app-btn>
         </v-card-actions>
       </v-card>

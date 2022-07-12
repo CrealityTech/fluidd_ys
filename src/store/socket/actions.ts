@@ -133,7 +133,13 @@ export const actions: ActionTree<SocketState, RootState> = {
   },
 
   async notifyGcodeResponse ({ dispatch }, payload) {
-    dispatch('console/onAddConsoleEntry', { message: `${Globals.CONSOLE_RECEIVE_PREFIX}${payload}` }, { root: true })
+    try {
+      const s1 = payload.split('!! ')[1]
+      const obj = JSON.parse(s1)
+      dispatch('console/onAddConsoleEntry', { message: `${Globals.CONSOLE_RECEIVE_PREFIX}!! ${obj.msg}` }, { root: true })
+    } catch (error) {
+      dispatch('console/onAddConsoleEntry', { message: `${Globals.CONSOLE_RECEIVE_PREFIX}${payload}` }, { root: true })
+    }
   },
 
   /**
