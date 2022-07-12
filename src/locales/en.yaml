@@ -2,7 +2,7 @@ app:
   bedmesh:
     label:
       box_scale: Box scale
-      flat_surface: Show flat plane
+      flatCommand Palette_surface: Show flat plane
       mesh_matrix: Mesh matrix
       probed_matrix: Probed matrix
       profile_name: Profile Name
@@ -156,6 +156,7 @@ app:
       reprint: Re-Print
       reset_file: Clear File
       reset_layout: Reset Layout
+      reset_stats: Reset Stats
       restart_firmware: Firmware Restart
       restart_service: Restart %{service}
       restart_service_klipper: Restart Klipper
@@ -174,7 +175,6 @@ app:
       upload: Upload
       upload_print: Upload & Print
       view: View
-      reset_stats: Reset Stats
     error:
       app_setup_link: >-
         Fluidd setup requirements can be found <a target="_blank"
@@ -194,8 +194,10 @@ app:
       add_filter: Add Filter
       add_preset: Add Preset
       add_user: Add user
+      alias: Alias
       api_key: Api Key
       api_url: API URL
+      apply_z_offset: Apply and Save Z_Offset
       category: Category
       change_password: Change password
       clear_all: Clear all
@@ -254,14 +256,12 @@ app:
       uncategorized: Uncategorized
       unretract_extra_length: Unretract Extra Length
       unretract_speed: Unretract Speed
+      unsaved_changes: Unsaved Changes
       used: used
       variance: Variance
       velocity: Velocity
       visible: Visible
       z_offset: Z Offset
-      unsaved_changes: Unsaved Changes
-      alias: Alias
-      apply_z_offset: Apply and Save Z_Offset
       edit_category: Edit category
       add_category: Add category
       file_time: File
@@ -375,10 +375,10 @@ app:
       reset: Reset
       select_theme: Select Theme
     camera_type_options:
+      iframe: HTTP page
       mjpegadaptive: MJPEG Adaptive
       mjpegstream: MJPEG Stream
       video: IP Camera
-      iframe: HTTP page
     camera_rotate_options:
       '90': 90°
       '180': 180°
@@ -398,6 +398,7 @@ app:
       confirm_dirty_editor_close: Require confirm when closing the editor with unsaved changes
       contains: Contains
       dark_mode: Dark mode
+      date_time_format: Date and Time format
       default_extrude_length: Default extrude length
       default_extrude_speed: Default extrude speed
       default_toolhead_move_length: Default toolhead move length
@@ -408,11 +409,11 @@ app:
       enable_notifications: Enable notifications
       expression: Expression
       extrusion_line_width: Extrusion Line Width
+      filter: Filter | Filters
       flip_horizontal: Horizontal Flip
       flip_vertical: Vertical Flip
-      filter: Filter | Filters
-      fps_target: FPS Target
       fps_idle_target: FPS Target when not in focus
+      fps_target: FPS Target
       height: Height
       gcode_coords: Use GCode Coordinates
       group_lower_layers: Group lower layers
@@ -436,7 +437,6 @@ app:
       toolhead_move_distances: Toolhead distance values
       type: Type
       z_adjust_values: Z Adjust values
-      date_time_format: Date and Time format
     timer_options:
       duration: Duration only
       filament: Filament Estimation
@@ -466,9 +466,9 @@ app:
       distribution_codename: Codename
       distribution_like: Distribution Like
       distribution_name: Distribution
-      frequency: Frequency
       hardware_desc: Hardware Description
       hostname: Hostname
+      frequency: Frequency
       klipper_load: Klipper Load
       manufactured: Manufactured
       manufacturer: Manufacturer
@@ -498,9 +498,9 @@ app:
       home_z: Home Z
       motors_off: MOTORS OFF
       z_tilt_adjust: Z_Tilt_Adjust
+      bed_screws_adjust: BED_SCREWS_ADJUST
       quad_gantry_level: QGL
       screws_tilt_calculate: Screws_Tilt_Calculate
-      bed_screws_adjust: BED_SCREWS_ADJUST
   version:
     btn:
       check_for_updates: Check for updates
@@ -580,3 +580,20 @@ app:
       variable_fps: Variable FPS
       variable_fps_min: Minimum Framerate
       variable_fps_max: Maximum Framerate
+  customize_string:
+    manage_accounts: Manage accounts
+    logout: Logout
+    recover: Recover
+    drag_me: Drag Me
+    active: active
+    cannot_preview: cannot currently be previewed
+    delete: Delete
+    all_con_icon:  All configured icons
+    welcome_back: Welcome back.
+    login_connect_tip: Sign in below to stay in touch with your printer.  
+    inval_cre: Invalid credentials
+    login: Login
+    forgot_password: Forgotten your password?
+    unsure_see: Unsure why you're seeing this?
+    not_found: 404 Not Found
+    return_dashboard: Return to the dashboard

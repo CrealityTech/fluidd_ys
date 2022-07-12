@@ -17,9 +17,9 @@
       </collapsable-card>
     </v-col>
     <v-col
+      v-if="false"
       cols="12"
       md="6"
-      v-if="false"
     >
       <collapsable-card
         :title="$t('app.general.title.other_files')"

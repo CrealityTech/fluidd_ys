@@ -22,7 +22,7 @@
             dense
             type="error"
           >
-            <span v-html="klippyStateMessage" />
+            <span v-html="handleConnectError(klippyStateMessage)" />
           </v-alert>
           <app-warnings v-if="hasWarnings" />
         </v-col>
@@ -37,5 +37,18 @@ import StateMixin from '@/mixins/state'
 
 @Component({})
 export default class KlippyStatusCard extends Mixins(StateMixin) {
+   handleConnectError (resStr: string) {
+    try {
+      const curObj = JSON.parse(resStr)
+      const { code } = curObj
+      if (code) {
+        return curObj.msg
+      } else {
+        return curObj.msg
+      }
+    } catch {
+      return resStr
+    }
+  }
 }
 </script>
