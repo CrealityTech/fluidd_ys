@@ -24,11 +24,18 @@
           </span>
           <span class="secondary--text">{{ $t('app.general.label.used') }}</span>
         </div>
-        <div class="">
+        <!-- <div class="">
           <span class="focus--text">
             {{ $filters.getReadableFileSizeString(fileSystemUsage.free) }}
           </span>
           <span class="secondary--text">{{ $t('app.general.label.free') }}</span>
+        </div> -->
+        <!-- 展示系统和磁盘总容量 -->
+        <div class="">
+          <span class="focus--text">
+            8.0 GB
+          </span>
+          <span class="secondary--text">{{ $t('app.system_info.label.capacity') }}</span>
         </div>
       </v-layout>
     </v-card-text>
@@ -48,7 +55,8 @@
         </tr>
         <tr>
           <th>{{ $t('app.system_info.label.capacity') }}</th>
-          <td>{{ sdInfo.capacity }}</td>
+          <!-- <td>{{ sdInfo.capacity }}</td> -->
+          <td>8.0 GB</td>
         </tr>
         <tr>
           <th>{{ $t('app.system_info.label.serial_number') }}</th>
