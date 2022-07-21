@@ -566,3 +566,4 @@ app:
     extruder: 喷头
     heater_bed: 热床
     raspberry: 树莓派
+    to_print: 打印

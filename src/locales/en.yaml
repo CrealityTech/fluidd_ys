@@ -600,3 +600,4 @@ app:
     extruder: extruder
     heater_bed: heater_bed
     raspberry: Raspberry_Pi
+    to_print: Print
