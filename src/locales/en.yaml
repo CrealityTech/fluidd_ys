@@ -597,3 +597,6 @@ app:
     unsure_see: Unsure why you're seeing this?
     not_found: 404 Not Found
     return_dashboard: Return to the dashboard
+    extruder: extruder
+    heater_bed: heater_bed
+    raspberry: Raspberry_Pi

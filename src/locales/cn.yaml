@@ -563,3 +563,6 @@ app:
     unsure_see: 不确定你为什么看到这个？
     not_found: 404未找到
     return_dashboard: 返回到仪表板
+    extruder: 喷头
+    heater_bed: 热床
+    raspberry: 树莓派
