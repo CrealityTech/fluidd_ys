@@ -176,7 +176,7 @@ export default class ThermalChart extends Vue {
                   <div>
                     ${param.marker}
                     <span style="font-size:${fontSize}px;color:${fontColor};font-weight:400;margin-left:2px">
-                      ${param.seriesName}:
+                      ${this.globalLegendLabel(param.seriesName)}:
                     </span>
                     <span style="float:right;margin-left:20px;font-size:${fontSize}px;color:${fontColor};font-weight:900">
                       ${param.value[param.seriesName].toFixed(2)}<small>°C</small>`
@@ -410,6 +410,20 @@ export default class ThermalChart extends Vue {
       ? num1 + 10
       : num1
     return num1
+  }
+
+  // Legend标签国际化
+  globalLegendLabel (seriesName:any) {
+    let currentkey = seriesName
+    if (currentkey === 'Raspberry_Pi' || currentkey === 'raspberry_pi') {
+      currentkey = 'raspberry'
+    }
+    const globalMap:any = {
+      extruder: this.$tc('app.customize_string.extruder'),
+      heater_bed: this.$tc('app.customize_string.heater_bed'),
+      raspberry: this.$tc('app.customize_string.raspberry'),
+    }
+    return globalMap[currentkey] || seriesName
   }
 }
 
