@@ -601,3 +601,6 @@ app:
     heater_bed: heater_bed
     raspberry: Raspberry_Pi
     to_print: Print
+    temperature: Temperature
+    extruder_temp: Extruder
+    heater_bed_temp: Heater Bed
