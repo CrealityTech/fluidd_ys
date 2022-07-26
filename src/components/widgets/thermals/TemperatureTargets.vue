@@ -44,7 +44,7 @@
               class="legend-item"
               @click="$emit('legendClick', item)"
             >
-              {{ item.prettyName }}
+              {{ $t('app.customize_string.'+ item.key + '_temp') }}
             </span>
           </td>
           <td class="temp-power">

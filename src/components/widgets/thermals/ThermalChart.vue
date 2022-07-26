@@ -232,7 +232,7 @@ export default class ThermalChart extends Vue {
       },
       yAxis: [
         {
-          name: 'Temperature °C',
+          name: this.$tc('app.customize_string.temperature') + '°C',
           nameTextStyle: {
             fontSize,
             color: fontColor,
