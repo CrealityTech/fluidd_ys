@@ -567,3 +567,6 @@ app:
     heater_bed: 热床
     raspberry: 树莓派
     to_print: 打印
+    temperature: 温度
+    extruder_temp: 喷头
+    heater_bed_temp: 热床
