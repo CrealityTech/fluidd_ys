@@ -604,3 +604,5 @@ app:
     temperature: Temperature
     extruder_temp: Extruder
     heater_bed_temp: Heater Bed
+    confirm_text: CONFIRM
+    cancel_print_tip: CANCLE_PRINT_BASE is not detected in printer.cfg, cancel printing function will not work properly

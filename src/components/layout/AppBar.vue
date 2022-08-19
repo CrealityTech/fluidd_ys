@@ -33,6 +33,7 @@
           v-html="instanceName"
         />
       </v-toolbar-title>
+      <!-- <div class="creator-cloud-icon" @click="toCreatroCloud"><img src="@/assets/creator-cloud.png" alt=""></div> -->
     </div>
 
     <!-- <v-spacer /> -->
@@ -167,6 +168,10 @@ export default class AppBar extends Mixins(StateMixin) {
       }
     })
   }
+
+  toCreatroCloud () {
+    window.open('https://www.crealitycloud.com/')
+  }
 }
 </script>
 
@@ -241,5 +246,17 @@ export default class AppBar extends Mixins(StateMixin) {
 
   ::v-deep .v-toolbar__content {
     padding-left: 0;
+  }
+
+  .creator-cloud-icon{
+    margin-left: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img{
+      width: 100%;
+    }
   }
 </style>

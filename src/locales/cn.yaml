@@ -570,3 +570,5 @@ app:
     temperature: 温度
     extruder_temp: 喷头
     heater_bed_temp: 热床
+    confirm_text: 确定
+    cancel_print_tip: 在printer.cfg中未检测到CANCLE_PRINT_BASE, 取消打印功能将无法正常使用
