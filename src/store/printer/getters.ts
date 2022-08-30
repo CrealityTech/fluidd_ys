@@ -101,8 +101,24 @@ export const getters: GetterTree<PrinterState, RootState> = {
   },
 
   getPrintProgress: (state) => {
-    const { gcode_start_byte, gcode_end_byte, filename } = state.printer.current_file ?? {}
+    const { gcode_start_byte, gcode_end_byte, filename, filament_total} = state.printer.current_file ?? {}
+    const { filament_used } = state.printer.print_stats ?? {}
     const { file_position } = state.printer.virtual_sdcard ?? {}
+
+    // 有耗材长度时通过耗材长度计算进度(打印100%时停止更新)
+    if (filament_total) {
+      if (!filament_used) {
+        return 0
+      } else {
+        if (state.printer.isPrintComplete) {
+          return 1
+        } else if((filament_used / filament_total) >= 1){
+          return 0.99
+        } else {
+          return (filament_used / filament_total)
+        }
+      }
+    }
 
     if (gcode_start_byte && gcode_end_byte && file_position && filename === state.printer.print_stats?.filename) {
       if (file_position <= gcode_start_byte) return 0
@@ -169,7 +185,7 @@ export const getters: GetterTree<PrinterState, RootState> = {
     if (actualEndTime > 0) eta = actualEndTime
 
     return {
-      progress: (progress * 100).toFixed(),
+      progress: Math.floor(progress * 100),
       duration: duration,
       slicer: slicerLeft,
       file: fileLeft,
