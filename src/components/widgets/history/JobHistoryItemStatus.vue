@@ -12,7 +12,7 @@
           {{ icon }}
         </v-icon>
       </template>
-      <span>{{ job.status }}</span>
+      <span>{{ $t('app.customize_string.' + job.status) || job.status }}</span>
     </v-tooltip>
   </span>
 </template>
