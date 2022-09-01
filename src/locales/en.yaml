@@ -606,3 +606,11 @@ app:
     heater_bed_temp: Heater Bed
     confirm_text: CONFIRM
     cancel_print_tip: CANCLE_PRINT_BASE is not detected in printer.cfg, cancel printing function will not work properly
+    completed: completed
+    cancelled: cancelled
+    error: error
+    printing: printing
+    in_progress: in_progress
+    server_exit: server_exit
+    klippy_shutdown: klippy_shutdown
+    klippy_disconnect: klippy_disconnect

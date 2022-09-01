@@ -572,3 +572,11 @@ app:
     heater_bed_temp: 热床
     confirm_text: 确定
     cancel_print_tip: 在printer.cfg中未检测到CANCLE_PRINT_BASE, 取消打印功能将无法正常使用
+    completed: 已完成
+    cancelled: 已取消
+    error: 出错
+    printing: 打印中
+    in_progress: 打印中
+    server_exit: 服务退出
+    klippy_shutdown: klippy 关闭
+    klippy_disconnect: klippy 断开
