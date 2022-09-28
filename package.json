@@ -1,7 +1,7 @@
 {
   "name": "creality",
   "version": "1.18.2",
-  "inner_version": "1.0.6_fluid",
+  "inner_version": "1.0.7_fluid",
   "private": true,
   "description": "fluidd, a klipper web client.",
   "author": {
