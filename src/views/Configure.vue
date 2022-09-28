@@ -2,7 +2,7 @@
   <v-row :dense="$vuetify.breakpoint.smAndDown">
     <v-col
       cols="12"
-      md="12"
+      md="6"
     >
       <collapsable-card
         :title="$t('app.general.title.config_files')"
@@ -17,7 +17,6 @@
       </collapsable-card>
     </v-col>
     <v-col
-      v-if="false"
       cols="12"
       md="6"
     >
