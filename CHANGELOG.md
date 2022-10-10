@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.18.2 - 1.0.7_fluidd](https://github.com/CrealityTech/fluidd_ys/tree/V1.0.7_fluidd) (2022-10-09)
+
+
+### Features
+
+* fluidd对应的默认主题修改为Creality sonic pad, 默认logo修改为Creality;
+* 隐藏设置中的authentication模块;
+* 任务列表文案修改为文件列表;
+* 语言支持只支持中文和英文;
+* 系统模块mcu相关信息不展示;
+* 所有中文翻译整理完善;
+* 打印进度优先使用耗材使用量计算;
+
+### Bug Fixes
+
 ### [1.18.2](https://github.com/fluidd-core/fluidd/compare/v1.18.1...v1.18.2) (2022-06-09)
 
 
